@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/navbar';
+import VerticalNavbar from '../components/navbar';
 import TopArtists from './top artists';
 import TopCharts from './top charts';
 import Container from 'react-bootstrap/Container';
@@ -11,9 +11,9 @@ function Discover() {
   return (
     <Container fluid>
       <Row>
-        <Col lg={4} md={4} sm={6}><Navbar /></Col>
-        <Col lg={4} md={4} sm={6}>discover</Col>
-        <Col lg={4} md={4} sm={6}>
+        <Col lg={4} md={4} sm={12}><VerticalNavbar /></Col>
+        <Col lg={4} md={4} sm={12}>discover</Col>
+        <Col lg={4} md={4} sm={12}>
           <TopArtists />
           <TopCharts />
         </Col>
